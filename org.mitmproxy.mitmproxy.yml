@@ -126,11 +126,11 @@ modules:
   - name: h11
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "h11==0.14" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "h11==0.16.0" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl
-        sha256: e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761
+        url: https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl
+        sha256: 63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86
 
   - name: h2
     buildsystem: simple
@@ -168,32 +168,32 @@ modules:
   - name: mitmproxy-linux #mitmproxy_rs
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "mitmproxy-linux==0.11.5" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "mitmproxy-linux==0.12.3" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/05/0c/5cc04ac3b7bb21b464d1109745ddfbdefc478ca0501b6cb5f7a91edd8516/mitmproxy_linux-0.11.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: e6a31faf244a9e3d44db02e3e3301aa2e699da67188820982a93028884f4cba8
+        url: https://files.pythonhosted.org/packages/f2/77/4ea31755496668f23c0498ffae3564c0bd631c4d0b1567167d474bd81706/mitmproxy_linux-0.12.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: b598b697511fc41e40988d1ff870a2954e604aa0ed4854381dffbd9ea9601b0f
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/81/ed/f864f39e733f6ecaaddf894c0f295983a6b5b09055d00a659eb08001b0d1/mitmproxy_linux-0.11.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: d7ce0b91d7a510009d532e6abbebe59f027a011fa745b13faa5b4d9ebe92abf5
+        url: https://files.pythonhosted.org/packages/ad/44/24451f6c0715d2bdf654c019a105053a43d4a4b48fd08900f1e5c1a790f3/mitmproxy_linux-0.12.3-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 70aaad9bd69e956e173b670be762ab7a17401b308a9d2e44f00f87b8a03f983c
         only-arches:
           - aarch64
 
   - name: mitmproxy_rs
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "mitmproxy_rs==0.11.5" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "mitmproxy_rs==0.12.3" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/29/34/430966c7a5dc998dec4e9f73d5628b2ccadaf73c26697020ad87e5183e16/mitmproxy_rs-0.11.5-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 5a4ffe6d20b3a0edb47b40cd60e7b62709c29e8adf2573514cc0abd1442acf63
+        url: https://files.pythonhosted.org/packages/ce/b5/6c1027a0fbead519aa1b09e5c15e7521b5ed0e2d05c2250567f7774d5124/mitmproxy_rs-0.12.3-cp312-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: 3abba1f5ab06c24b5e8d39774cd32305ec7811229058da0f8959da34ce29f96f
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/97/a2/aa81e54a27572b4d9503e79e9999019fdf4c1e1f2a7b8a083a7fa01f7bd6/mitmproxy_rs-0.11.5-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 971241cb70bad87b55f12bc6e8d7dd3efd02a1acbe1730703e2cfeeb6edd3908
+        url: https://files.pythonhosted.org/packages/c4/0a/8b967df59f0974685848d2c93aceab853ce0ed4904feeed6424efae6dc42/mitmproxy_rs-0.12.3-cp312-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: d0fbabaf2c0ac3bb4005fdafa03931967f5dd2188ee801a668334fef855c5198
         only-arches:
           - aarch64
 
@@ -243,11 +243,11 @@ modules:
   - name: ruamel.yaml
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "ruamel.yaml==0.18.6" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "ruamel.yaml==0.18.10" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/73/67/8ece580cc363331d9a53055130f86b096bf16e38156e33b1d3014fffda6b/ruamel.yaml-0.18.6-py3-none-any.whl
-        sha256: 57b53ba33def16c4f3d807c0ccbc00f8a6081827e81ba2491691b76882d0c636
+        url: https://files.pythonhosted.org/packages/c2/36/dfc1ebc0081e6d39924a2cc53654497f967a084a436bb64402dfce4254d9/ruamel.yaml-0.18.10-py3-none-any.whl
+        sha256: 30f22513ab2301b3d2b577adc121c6471f28734d3d9728581245f1e76468b4f1
       - type: file
         url: https://files.pythonhosted.org/packages/44/d0/3f68a86e006448fb6c005aee66565b9eb89014a70c491d70c08de597f8e4/ruamel.yaml.clib-0.2.12-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
         sha256: 95c3829bb364fdb8e0332c9931ecf57d9be3519241323c5274bd82f709cebc0c
@@ -271,16 +271,16 @@ modules:
   - name: tornado
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "tornado==6.4.2" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "tornado==6.5.0" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/22/55/b78a464de78051a30599ceb6983b01d8f732e6f69bf37b4ed07f642ac0fc/tornado-6.4.2-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: bca9eb02196e789c9cb5c3c7c0f04fb447dc2adffd95265b2c7223a8a615ccbf
+        url: https://files.pythonhosted.org/packages/d8/fa/23bb108afb8197a55edd333fe26a3dad9341ce441337aad95cd06b025594/tornado-6.5-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: 03576ab51e9b1677e4cdaae620d6700d9823568b7939277e4690fe4085886c55
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/cb/fb/fdf679b4ce51bcb7210801ef4f11fdac96e9885daa402861751353beea6e/tornado-6.4.2-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 1a017d239bd1bb0919f72af256a970624241f070496635784d9bf0db640d3fec
+        url: https://files.pythonhosted.org/packages/4a/62/fdd9b12b95e4e2b7b8c21dfc306b0960b20b741e588318c13918cf52b868/tornado-6.5-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 7c625b9d03f1fb4d64149c47d0135227f0434ebb803e2008040eb92906b0105a
         only-arches:
           - aarch64
 
@@ -296,11 +296,11 @@ modules:
   - name: typing-extensions
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "typing-extensions==4.12.2" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "typing-extensions==4.13.2" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl
-        sha256: 04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d
+        url: https://files.pythonhosted.org/packages/8b/54/b1ae86c0973cc6f0210b53d508ca3641fb6d0c56823f288d108bc7ab3cc8/typing_extensions-4.13.2-py3-none-any.whl
+        sha256: a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c
 
   - name: wcwidth #urwid
     buildsystem: simple
@@ -654,6 +654,25 @@ modules:
         url: https://files.pythonhosted.org/packages/64/af/965f81a65f4d9bcb337dd0e87845fd2e081c4ab5a1c0b3e0cf20abeac423/pyinstaller_hooks_contrib-2024.11-py3-none-any.whl
         sha256: 2781d121a1ee961152ba7287a262c65a1078da30c9ef7621cb8c819326884fd5
 
+  - name: argon2-cffi
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "argon2-cffi==23.1.0" --no-build-isolation
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/a4/6a/e8a041599e78b6b3752da48000b14c8d1e8a04ded09c88c714ba047f34f5/argon2_cffi-23.1.0-py3-none-any.whl
+        sha256: c670642b78ba29641818ab2e68bd4e6a78ba53b7eff7b4c3815ae16abf91c7ea
+      - type: file
+        url: https://files.pythonhosted.org/packages/ec/f7/378254e6dd7ae6f31fe40c8649eea7d4832a42243acaf0f1fff9083b2bed/argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: b746dba803a79238e925d9046a63aa26bf86ab2a2fe74ce6b009a1c3f5c8f2ae
+        only-arches:
+          - x86_64
+      - type: file
+        url: https://files.pythonhosted.org/packages/b3/02/f7f7bb6b6af6031edb11037639c697b912e1dea2db94d436e681aea2f495/argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 9524464572e12979364b7d600abf96181d3541da11e23ddf565a32e70bd4dc0d
+        only-arches:
+          - aarch64
+
   - name: mitmproxy
     buildsystem: simple
     build-commands:
@@ -665,8 +684,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/mitmproxy/mitmproxy.git
-        tag: v11.1.0
-        commit: 277bf979301190a41c2a3b4abfed7b9b80a28841
+        tag: v12.1.0
+        commit: 10076ceaf1d013247517992c59d26a32e74d5415
       - type: file
         path: org.mitmproxy.mitmproxy.appdata.xml
       - type: file
