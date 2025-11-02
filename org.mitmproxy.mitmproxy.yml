@@ -684,8 +684,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/mitmproxy/mitmproxy.git
-        tag: v12.1.0
-        commit: 10076ceaf1d013247517992c59d26a32e74d5415
+        tag: v12.2.0
+        commit: a91a81b49c3780cb0f8b5f4740042771a097ee49
       - type: file
         path: org.mitmproxy.mitmproxy.appdata.xml
       - type: file
