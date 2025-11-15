@@ -61,13 +61,13 @@ modules:
         url: https://files.pythonhosted.org/packages/77/89/bc88a6711935ba795a679ea6ebee07e128050d6382eaa35a0a47c8032bdc/pyasn1_modules-0.4.1-py3-none-any.whl
         sha256: 49bfa96b45a292b711e986f222502c1c9a5e1f4e568fc30e2574a6c7d07838fd
       - type: file
-        url: https://files.pythonhosted.org/packages/b2/d5/da47df7004cb17e4955df6a43d14b3b4ae77737dff8bf7f8f333196717bf/cffi-1.17.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: b62ce867176a75d03a665bad002af8e6d54644fad99a3c70905c543130e39d93
+        url: https://files.pythonhosted.org/packages/98/df/0a1755e750013a2081e863e7cd37e0cdd02664372c754e5560099eb7aa44/cffi-2.0.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+        sha256: c8d3b5532fc71b7a77c09192b4a5a200ea992702734a2e9279a37f2478236f26
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/1a/df/f8d151540d8c200eb1c6fba8cd0dfd40904f1b0682ea705c36e6c2e97ab3/cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: da95af8214998d77a98cc14e3a3bd00aa191526343078b530ceb0bd710fb48a5
+        url: https://files.pythonhosted.org/packages/a9/f5/a2c23eb03b61a0b8747f211eb716446c826ad66818ddc7810cc2cc19b3f2/cffi-2.0.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl
+        sha256: d48a880098c96020b02d5a1f7d9251308510ce8858940e6fa99ece33f610838b
         only-arches:
           - aarch64
       - type: file
@@ -86,16 +86,16 @@ modules:
   - name: Brotli
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "Brotli==1.1.0" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "Brotli" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/ab/fb/0517cea182219d6768113a38167ef6d4eb157a033178cc938033a552ed6d/Brotli-1.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: d0c5516f0aed654134a2fc936325cc2e642f8a0e096d075209672eb321cff408
+        url: https://files.pythonhosted.org/packages/ac/a3/d98d2472e0130b7dd3acdbb7f390d478123dbf62b7d32bda5c830a96116d/Brotli-1.1.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: a93dde851926f4f2678e704fadeb39e16c35d8baebd5252c9fd94ce8ce68c4a0
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/e5/18/c18c32ecea41b6c0004e15606e274006366fe19436b6adccc1ae7b2e50c2/Brotli-1.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 70051525001750221daa10907c77830bc889cb6d865cc0b813d9db7fefc21451
+        url: https://files.pythonhosted.org/packages/bb/80/6aaddc2f63dbcf2d93c2d204e49c11a9ec93a8c7c63261e2b4bd35198283/Brotli-1.1.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 3c0ef38c7a7014ffac184db9e04debe495d317cc9c6fb10071f7fefd93100a4f
         only-arches:
           - aarch64
 
@@ -135,17 +135,17 @@ modules:
   - name: h2
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "h2==4.1.0" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "h2" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/2a/e5/db6d438da759efbb488c4f3fbdab7764492ff3c3f953132efa6b9f0e9e53/h2-4.1.0-py3-none-any.whl
-        sha256: 03a46bcf682256c95b5fd9e9a99c1323584c3eec6440d379b9903d709476bc6d
+        url: https://files.pythonhosted.org/packages/69/b2/119f6e6dcbd96f9069ce9a2665e0146588dc9f88f29549711853645e736a/h2-4.3.0-py3-none-any.whl
+        sha256: c438f029a25f7945c69e0ccf0fb951dc3f73a5f6412981daee861431b70e2bdd
       - type: file
-        url: https://files.pythonhosted.org/packages/d7/de/85a784bcc4a3779d1753a7ec2dee5de90e18c7bcf402e71b51fcf150b129/hyperframe-6.0.1-py3-none-any.whl
-        sha256: 0ec6bafd80d8ad2195c4f03aacba3a8265e57bc4cff261e802bf39970ed02a15
+        url: https://files.pythonhosted.org/packages/48/30/47d0bf6072f7252e6521f3447ccfa40b421b6824517f82854703d0f5a98b/hyperframe-6.1.0-py3-none-any.whl
+        sha256: b03380493a519fce58ea5af42e4a42317bf9bd425596f7a0835ffce80f1a42e5
       - type: file
-        url: https://files.pythonhosted.org/packages/d5/34/e8b383f35b77c402d28563d2b8f83159319b509bc5f760b15d60b0abf165/hpack-4.0.0-py3-none-any.whl
-        sha256: 84a076fad3dc9a9f8063ccb8041ef100867b1878b25ef0ee63847a5d53818a6c
+        url: https://files.pythonhosted.org/packages/07/c6/80c95b1b2b94682a72cbdbfb85b81ae2daffa4291fbfa1b1464502ede10d/hpack-4.1.0-py3-none-any.whl
+        sha256: 157ac792668d995c657d93111f46b4535ed114f0c9c8d672271bbec7eae1b496
 
   - name: kaitaistruct
     buildsystem: simple
@@ -165,51 +165,46 @@ modules:
         url: https://files.pythonhosted.org/packages/4e/f6/71d6ec9f18da0b2201287ce9db6afb1a1f637dedb3f0703409558981c723/ldap3-2.9.1-py2.py3-none-any.whl
         sha256: 5869596fc4948797020d3f03b7939da938778a0f9e2009f7a072ccf92b8e8d70
 
-  - name: mitmproxy-linux #mitmproxy_rs
-    buildsystem: simple
-    build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "mitmproxy-linux==0.12.3" --no-build-isolation
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/f2/77/4ea31755496668f23c0498ffae3564c0bd631c4d0b1567167d474bd81706/mitmproxy_linux-0.12.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: b598b697511fc41e40988d1ff870a2954e604aa0ed4854381dffbd9ea9601b0f
-        only-arches:
-          - x86_64
-      - type: file
-        url: https://files.pythonhosted.org/packages/ad/44/24451f6c0715d2bdf654c019a105053a43d4a4b48fd08900f1e5c1a790f3/mitmproxy_linux-0.12.3-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 70aaad9bd69e956e173b670be762ab7a17401b308a9d2e44f00f87b8a03f983c
-        only-arches:
-          - aarch64
 
   - name: mitmproxy_rs
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "mitmproxy_rs==0.12.3" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "mitmproxy_rs" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/ce/b5/6c1027a0fbead519aa1b09e5c15e7521b5ed0e2d05c2250567f7774d5124/mitmproxy_rs-0.12.3-cp312-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 3abba1f5ab06c24b5e8d39774cd32305ec7811229058da0f8959da34ce29f96f
+        url: https://files.pythonhosted.org/packages/a4/2a/5baebcfb4a3adc752a8d3c68b00b2093df6125ecb19076f31bb04103dffc/mitmproxy_rs-0.12.7-cp312-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: ea7d8b5fbb8a6263500bc2cebcfadf06efb0778acfd2ca4238a6971ea4dc8735
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/c4/0a/8b967df59f0974685848d2c93aceab853ce0ed4904feeed6424efae6dc42/mitmproxy_rs-0.12.3-cp312-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: d0fbabaf2c0ac3bb4005fdafa03931967f5dd2188ee801a668334fef855c5198
+        url: https://files.pythonhosted.org/packages/59/85/e41e66bb0f8ed05eaa384ee9f310ae0b544c572b4e85f5644ad1bee612f6/mitmproxy_rs-0.12.7-cp312-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 948c66181038e56c451ff099e9a2fc13610f55713a64188703e631dc61770663
+        only-arches:
+          - aarch64
+      - type: file
+        url: https://files.pythonhosted.org/packages/ee/4e/f7b39e37ac21408b5761dd1a69a623182f192398a8ce8018eeb743bb57b6/mitmproxy_linux-0.12.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: d1f708fadad84f36b6bc8d47850bb9501c63678bba092ea887c65d72fe49a2e0
+        only-arches:
+          - x86_64
+      - type: file
+        url: https://files.pythonhosted.org/packages/53/8d/d9b1347ce3892b9f141de749a8b65c90b9bf492f2b61f47c2d6fd9933c4d/mitmproxy_linux-0.12.7-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+        sha256: 47ce06e6de8dfecffce3b9205cff45366921822ffdc3fbb88e80166d6c5209b1
         only-arches:
           - aarch64
 
   - name: msgpack
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "msgpack==1.1.0" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "msgpack" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/f1/54/65af8de681fa8255402c80eda2a501ba467921d5a7a028c9c22a2c2eedb5/msgpack-1.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 17fb65dd0bec285907f68b15734a993ad3fc94332b5bb21b0435846228de1f39
+        url: https://files.pythonhosted.org/packages/5d/ba/459f18c16f2b3fc1a1ca871f72f07d70c07bf768ad0a507a698b8052ac58/msgpack-1.1.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+        sha256: fac4be746328f90caa3cd4bc67e6fe36ca2bf61d5c6eb6d895b6527e3f05071e
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/33/af/dc95c4b2a49cff17ce47611ca9ba218198806cad7796c0b01d1e332c86bb/msgpack-1.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 4676e5be1b472909b2ee6356ff425ebedf5142427842aa06b4dfd5117d1ca8a2
+        url: https://files.pythonhosted.org/packages/d3/68/93180dce57f684a61a88a45ed13047558ded2be46f03acb8dec6d7c513af/msgpack-1.1.2-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl
+        sha256: 1fdf7d83102bf09e7ce3357de96c59b627395352a4024f6e2458501f158bf999
         only-arches:
           - aarch64
 
@@ -344,13 +339,13 @@ modules:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} "zstandard" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/fc/79/edeb217c57fe1bf16d890aa91a1c2c96b28c07b46afed54a5dcf310c3f6f/zstandard-0.23.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-        sha256: 72c68dda124a1a138340fb62fa21b9bf4848437d9ca60bd35db36f2d3345f373
+        url: https://files.pythonhosted.org/packages/63/4b/e3678b4e776db00f9f7b2fe58e547e8928ef32727d7a1ff01dea010f3f13/zstandard-0.25.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+        sha256: 8e735494da3db08694d26480f1493ad2cf86e99bdd53e8e9771b2752a5c0246a
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/26/af/36d89aae0c1f95a0a98e50711bc5d92c144939efc1f81a2fcd3e78d7f4c1/zstandard-0.23.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: b0e166f698c5a3e914947388c162be2583e0c638a4703fc6a543e23a88dea3c1
+        url: https://files.pythonhosted.org/packages/6d/db/ddb11011826ed7db9d0e485d13df79b58586bfdec56e5c84a928a9a78c1c/zstandard-0.25.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl
+        sha256: bfc4e20784722098822e3eee42b8e576b379ed72cca4a7cb856ae733e62192ea
         only-arches:
           - aarch64
 
@@ -375,11 +370,17 @@ modules:
   - name: pdoc
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "pdoc==15.0.0" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "pdoc" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/3d/4a/e4a5490bb6d39214cd7778dfd8cf6b353b94f17aafa703bd1d11673ea025/pdoc-15.0.0-py3-none-any.whl
-        sha256: 151b0187a25eaf827099e981d6dbe3a4f68aeb18d0d637c24edcab788d5540f1
+        url: https://files.pythonhosted.org/packages/16/a1/56a17b7f9e18c2bb8df73f3833345d97083b344708b97bab148fdd7e0b82/pdoc-16.0.0-py3-none-any.whl
+        sha256: 070b51de2743b9b1a4e0ab193a06c9e6c12cf4151cf9137656eebb16e8556628
+      - type: file
+        url: https://files.pythonhosted.org/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl
+        sha256: 86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b
+      - type: file
+        url: https://files.pythonhosted.org/packages/b8/06/2697b5043c3ecb720ce0d243fc7cf5024c0b5b1e450506e9b21939019963/markdown2-2.5.4-py3-none-any.whl
+        sha256: 3c4b2934e677be7fec0e6f2de4410e116681f4ad50ec8e5ba7557be506d3f439
 
   - name: pyinstaller
     buildsystem: simple
@@ -672,7 +673,17 @@ modules:
         sha256: 9524464572e12979364b7d600abf96181d3541da11e23ddf565a32e70bd4dc0d
         only-arches:
           - aarch64
-
+  - name: bcrypt
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=/app "bcrypt" --no-build-isolation
+    cleanup:
+      - "*"
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/d4/36/3329e2518d70ad8e2e5817d5a4cac6bba05a47767ec416c7d020a965f408/bcrypt-5.0.0.tar.gz
+        sha256: f748f7c2d6fd375cc93d3fba7ef4a9e3a092421b8dbf34d8d4dc06be9492dfdd
+          
   - name: mitmproxy
     buildsystem: simple
     build-commands:
@@ -692,3 +703,4 @@ modules:
         path: org.mitmproxy.mitmproxy.png
       - type: file
         path: org.mitmproxy.mitmproxy.desktop
+
