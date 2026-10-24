@@ -10,6 +10,7 @@ modules:
   - name: mitmproxy
     buildsystem: simple
     build-commands:
+      - mkdir -p /app/bin
       - find . -type f -exec install -Dm755 {} /app/bin/ \;
     post-install:
       - install -Dm644 org.mitmproxy.mitmproxy.png -t /app/share/icons/hicolor/256x256/apps/
